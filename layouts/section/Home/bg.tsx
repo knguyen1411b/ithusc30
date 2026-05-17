@@ -33,10 +33,11 @@ export default function BackgroundHome() {
               key={index}
               src={src}
               alt={`Slide ${index + 1}`}
-              width={300} // Adjust width as needed
-              height={200} // Adjust height as needed
+              width={250}
+              height={250}
               className={`${h.tag}`}
               placeholder="empty"
+              priority
             />
           ))}
         </div>

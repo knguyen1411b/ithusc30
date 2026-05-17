@@ -37,7 +37,7 @@ export default function ScrollToTop() {
   }
   // #B474F8, #429DFF
   const classBtn: string =
-    'rounded-full text-white fixed bottom-10 right-6 p-5 hover:bottom-12 animate-fadeIn transition-all duration-300 ease-in-out BTN_TO_TOP'
+    'rounded-full text-white fixed bottom-8 right-5 p-3 hover:bottom-10 animate-fadeIn transition-all duration-300 ease-in-out BTN_TO_TOP'
 
   return (
     <>
@@ -53,7 +53,7 @@ export default function ScrollToTop() {
               background: '#429DFF',
             }}
           >
-            <ArrowBigUpDash />
+            <ArrowBigUpDash size={20} />
           </button>
         </Tooltip>
       )}

@@ -1,51 +1,68 @@
-## Website Kỷ Niệm 30 Năm Thành Lập Khoa Công Nghệ Thông Tin
+# IT HUSC 30th Anniversary Landing Page
 
-_Được viết bởi **Khánh Nguyên**_  
-_Hoàn thành: **02-12-2024**_
+A modern, animated landing page built to celebrate the 30th anniversary of the Faculty of Information Technology, University of Sciences, Hue University.
 
-**Kết quả: Đạt giải nhất cuộc thi thiết kế - lading page "Chào mừng 30 Năm Thành Lập Khoa Công Nghệ Thông Tin"**
+![Project preview](./app/image.png)
 
----
+## Highlights
 
-### Công Nghệ Sử Dụng
+- Built with Next.js 14 and TypeScript
+- Smooth section-based navigation with scroll interactions
+- Animated timelines and transitions (Framer Motion + AOS)
+- Responsive layout for desktop and mobile
+- Styled with Tailwind CSS, NextUI, and Sass
 
-- **Next.js**
-- **Next UI**
-- **Tailwind CSS**
-- **TypeScript**
-- **Framer Motion**
-- **React Scroll**
-- **React Vertical Timeline Component**
-- **Sass**
-- **AOS**
+## Tech Stack
 
----
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- NextUI
+- Framer Motion
+- AOS
+- React Scroll
+- React Vertical Timeline Component
+- Sass
 
-### Mô tả
+## Getting Started
 
-    Lading page kỉ niệm 30 năm thành lập khoa Công nghệ thông tin, trường Đại học Khoa học, Đại học Huế.
-    Được viết bằng next js kết hợp next ui và tailwind cho giao diện trực quan
-    Trang web được tối ưu về seo với metadata của next js
+### Prerequisites
 
-### Phân Công Làm Việc
+- Node.js 18+ (recommended: latest LTS)
+- pnpm
 
-- **Design**: Khánh Nguyên & Thanh Thúy
-- **Development**: Khánh Nguyên
+### Install
 
----
+```bash
+pnpm install
+```
 
-### Liên Hệ
+### Run in development
 
-- Mọi phản hồi, xin liên hệ với **Khánh Nguyên** hoặc **Thanh Thúy**.
+```bash
+pnpm dev
+```
 
----
+The app runs at `http://localhost:3030`.
 
-### Giấy Phép
+### Build for production
 
-- Dự án này được cấp phép theo **Giấy Phép MIT**. Vui lòng xem tệp `LICENSE` để biết thêm chi tiết.
+```bash
+pnpm build
+pnpm start
+```
 
----
+## Project Structure
 
-_Hoàn thành: **02/12/2024**_  
-**Cảm ơn bạn đã xem qua!**  
-_Tôi hy vọng bạn thấy dự án này hữu ích và thú vị. Chúc bạn lập trình vui vẻ!_
+```text
+app/                 # Next.js app router entry files
+layouts/             # Main page layout and sections (Home, About, Itinerary, Event)
+components/          # Shared UI components
+styles/              # Global styles, animations, fonts
+config/              # Static metadata and JSON data
+assets/              # Images and static design assets
+```
+
+> [!NOTE]
+> This project was created for a university anniversary campaign and focuses on visual storytelling, smooth interactions, and section-based content flow.

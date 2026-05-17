@@ -1,11 +1,11 @@
-.y-in{
-    animation: inX 1s ease forwards;
-    filter: drop-shadow(0 5px 30px rgba(126, 199, 255, 0.5));
+.y-in {
+  animation: inX 1s ease forwards;
+  filter: drop-shadow(0 5px 30px rgba(126, 199, 255, 0.5));
 }
-.img-banner-ll{
-    animation: xoay 8s infinite;
-  }
-  
+.img-banner-ll {
+  animation: xoay 8s infinite;
+}
+
 @keyframes inX {
   0% {
     opacity: 0;
@@ -18,28 +18,27 @@
   }
 }
 @keyframes inY {
-    0% {
-      opacity: 0;
-      transform: translateY(100px) scale(0.8);
-    }
-  
-    100% {
-      opacity: 1;
-      transform: translateY(0) scale(1);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(100px) scale(0.8);
   }
-  @keyframes xoay{
-    0%{
-      transform: rotate(0deg);
-    }
-    25%{
-      transform: rotate(5deg);
-    }
-    75%{
-      transform: rotate(-5deg);
-    }
-    100%{
-      transform: rotate(0deg);
-    }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
   }
-  
+}
+@keyframes xoay {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

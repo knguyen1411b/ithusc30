@@ -1,16 +1,17 @@
 'use client'
-import { useInView, motion } from 'framer-motion'
-import { useRef, useEffect, useState } from 'react'
 import ProgressBar from '@/components/progress-bar'
+import ScrollToTop from '@/components/scroll-to-top'
+import { useAOS } from '@/utils/aos'
+import { motion, useInView } from 'framer-motion'
+import ReactLenis from 'lenis/react'
+import { useEffect, useRef, useState } from 'react'
 import Footer from './footer'
 import Navbar from './navbar'
-import ScrollToTop from '@/components/scroll-to-top'
-import ItinerarySection from './section/Itinerary'
-import AboutSection from './section/About'
-import HomeSection from './section/Home'
-import EventSection from './section/Event'
 import Section from './section'
-import { useAOS } from '@/utils/aos'
+import AboutSection from './section/About'
+import EventSection from './section/Event'
+import HomeSection from './section/Home'
+import ItinerarySection from './section/Itinerary'
 
 export default function MainLayout() {
   useAOS()
@@ -52,31 +53,33 @@ export default function MainLayout() {
       {/* Header */}
       <Navbar inView={isActi} />
 
-      {/* Home section */}
-      <Section id="Home" ref={HomeRef}>
-        <HomeSection />
-      </Section>
+      <ReactLenis root>
+        {/* Home section */}
+        <Section id="Home" ref={HomeRef}>
+          <HomeSection />
+        </Section>
 
-      {/* About section */}
-      <Section id="About" ref={AboutRef}>
-        <AboutSection />
-      </Section>
+        {/* About section */}
+        <Section id="About" ref={AboutRef}>
+          <AboutSection />
+        </Section>
 
-      {/* Itinerary section */}
-      <Section id="Itinerary" ref={ItineraryRef}>
-        <ItinerarySection />
-      </Section>
+        {/* Itinerary section */}
+        <Section id="Itinerary" ref={ItineraryRef}>
+          <ItinerarySection />
+        </Section>
 
-      {/* Event section */}
-      <Section id="Event" ref={EventRef}>
-        <EventSection />
-      </Section>
+        {/* Event section */}
+        <Section id="Event" ref={EventRef}>
+          <EventSection />
+        </Section>
 
-      {/* Out section */}
-      <motion.section id="OutSection" ref={OutRef} />
+        {/* Out section */}
+        <motion.section id="OutSection" ref={OutRef} />
 
-      {/* Footer section */}
-      <Footer />
+        {/* Footer section */}
+        <Footer />
+      </ReactLenis>
 
       {/* Extend section */}
       <ProgressBar />

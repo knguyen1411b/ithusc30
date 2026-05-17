@@ -1,117 +1,113 @@
 // Mặc định
 .NavBarUI {
-    position: fixed;
-    transition: all 0.5s ease;
-    animation: InY 0.8s ease forwards;
+  position: fixed;
+  transition: all 0.5s ease;
+  animation: InY 0.8s ease forwards;
 }
 // Loai khi cuon
 .NavBarNotScroll {
-    padding: 15px 0;
-    backdrop-filter: blur(0px) !important;
-    background: linear-gradient(to bottom, #152c3e, rgba(0, 0, 0, 0)) !important;
+  padding: 15px 0;
+  backdrop-filter: blur(0px) !important;
+  background: linear-gradient(to bottom, #152c3e, rgba(0, 0, 0, 0)) !important;
 }
 // Them cuon trang
 .NavBarUIScroll {
-    padding: 5px 0;
-    backdrop-filter: blur(3px) !important;
-    background-color: rgba(255, 255, 255, 0.8) !important;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 5px 0;
+  backdrop-filter: blur(3px) !important;
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 // Khi được active icon home
 .NavItemActiHome {
-    position: relative;
-    scale: 1.3;
-    transition: all 0.3s ease;
+  position: relative;
+  scale: 1.3;
+  transition: all 0.3s ease;
 }
 
-
 // Menu not home
-.NotHome{
-    transition: all 0.3s ease;
-    &:hover {
-        color: transparent ;
-        background: linear-gradient(145deg, #429DFF, #B474F8) ;
-        -webkit-background-clip: text !important;
-        background-clip: text !important;
-    }
+.NotHome {
+  transition: all 0.3s ease;
+  &:hover {
+    color: transparent;
+    background: linear-gradient(145deg, #429dff, #b474f8);
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+  }
 }
 
 // Mặc định
 .NavItem {
-    font-weight: bold;
-    transition: all 0.3s ease;
-    font-size: 18px;
-    position: relative;
-    cursor: pointer;
-    &::after {
-        transition: all 0.5s ease;
-        content: '';
-        position: absolute;
-        bottom: -5px;
-        left: -10%;
-        border-radius: 10px;
-        width: 120%;
-        height: 33px;
-        opacity: 0.5;
-        z-index: -1;
-        background: linear-gradient(145deg, #429DFF, #B474F8);
-        opacity: 0;
-    }
-
+  font-weight: bold;
+  transition: all 0.3s ease;
+  font-size: 18px;
+  position: relative;
+  cursor: pointer;
+  &::after {
+    transition: all 0.5s ease;
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: -10%;
+    border-radius: 10px;
+    width: 120%;
+    height: 33px;
+    opacity: 0.5;
+    z-index: -1;
+    background: linear-gradient(145deg, #429dff, #b474f8);
+    opacity: 0;
+  }
 }
 // Khi cuon trang
 .NavItemScroll {
-    color: #003056 ;
+  color: #003056;
 }
 
-
-// Khi được active 
+// Khi được active
 .NavItemActi {
-    transition: all 0.3s ease;
-    scale: 1.15;
-    position: relative;
-    color: #003056 !important;
-    margin: 0 10px;
-    &::after {
-        opacity: 0.5;
-    }
+  transition: all 0.3s ease;
+  scale: 1.15;
+  position: relative;
+  color: #003056 !important;
+  margin: 0 10px;
+  &::after {
+    opacity: 0.5;
+  }
 }
 
 // Mặc định logo
 .NavIcon,
 .NavIconScroll {
-    width: 252px;
-    height: 56px;
-    background-position: center;
-    background-size: cover;
-    transition: all 0.3s ease;
+  width: 252px;
+  height: 56px;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.3s ease;
 }
 .NavIcon {
-    background-image: url('/imgs/logokhoa-trang.webp');
+  background-image: url('/imgs/logokhoa-trang.webp');
 }
 .NavIconScroll {
-    background-image: url('/imgs/logokhoa-xanh.webp');
+  background-image: url('/imgs/logokhoa-xanh.webp');
 }
-.MenuRpS{
-    top: 85px;
+.MenuRpS {
+  top: 85px;
 }
 @media (max-width: 768px) {
-
-    .NavIcon,
-    .NavIconScroll {
-        width: 59px;
-        background-image: url('/imgs/logo_it.webp');
-        background-repeat: no-repeat;
-    }
+  .NavIcon,
+  .NavIconScroll {
+    width: 59px;
+    background-image: url('/imgs/logo_it.webp');
+    background-repeat: no-repeat;
+  }
 }
-@keyframes InY{
-    0%{
-        opacity: 0;
-        transform: translateY(-100%) ;
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0);
-    }
+@keyframes InY {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
